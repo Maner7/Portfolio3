@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Index    </title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts.js" ></script>
+</head>
+<body>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div id="modal-content" class="modal-content">
+            <span class="close">&times;</span>
+            <p>Your search history will be shown here</p>
+        </div>
+    </div>
+
+    <div id="container" align="center">
+        <h1>Stack Overflow Viewer Application</h1>
+        <div id="input-container">
+            <select class="blue-style" id="dropdown">
+                <option value="users" selected="selected">Users</option>
+                <option value="kommentarer">Comments</option>
+                <option value="answers">Answers</option>
+                <option value="questions">Questions</option>
+            </select>
+
+            <input class="blue-style" type="text" id="text-field" name="Search">
+            <button class="blue-style" type="button" onclick="startSearch()">Search</button>
+            <button class="blue-style" type="button" onclick="openHistory()">Search history</button>
+        </div>
+        
+        <div id="output-container" class="output-container"></div>
+        <table id="output-table"></table>
+    </div>      
+    <script src="initscripts.js"></script>
+</body>
+</html>
